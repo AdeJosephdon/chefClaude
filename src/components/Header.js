@@ -4,12 +4,12 @@ import logo from './image/Chef Claude Icon.png';
 function Header(prop) {
     console.log(prop)
   return (
-    <div className="header"
+    <header className="header"
     aria-label="header"
     >
             <img src={logo} alt="logo" />
             <h1>Chef Claude</h1>
-    </div>
+    </header>
   );
 }
 

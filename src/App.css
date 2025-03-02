@@ -2,14 +2,7 @@ body{
   font-family: "Poppins", serif;
   background-color: #FAFAF8;
 }
-/* .App {
-  text-align: center;
-} */
 
-/* for pads
-body {
-  background-color: #1C1917;
-} */
 .header{
   padding: 24px 16px;
   display: flex;
@@ -19,6 +12,7 @@ body {
   background-color: #ffffff;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: 40px;
 }
 
 .header > img {
@@ -78,7 +72,7 @@ main{
 .get-recipe-container button{
 background-color: #D17557;
   /* width: Hug (115px)px; */
-  height: 38px;
+  min-height: 38px;
   padding: 9px 17px 9px 17px;
   border-radius: 6px;
   color: white;
@@ -96,33 +90,22 @@ background-color: #D17557;
   margin-bottom: 8px;
 }
 
-
-/* For Pads
-body {
-  background-color: #1C1917;
+@media (max-width: 600px) {
+    main {
+      padding: 30px 24px;
+    }
+    .add-ingredient-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      margin: 45px 0;
+    }
+    .add-ingredient-form button{
+      width: 100%;
+      min-height: 38px;
+    }
+    .ingredients-list{
+      margin-bottom: 45px;
+    }
 }
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pad-container {
-  display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(2, 100px);
-  gap: 10px;
-}
-
-button {
-  height: 100px;
-  width: 100px;
-  border: 3px solid white;
-  border-radius: 5px;
-  cursor: pointer;
-  opacity: 0.1;
-}
-button.on{
-  opacity: 1;
-} */

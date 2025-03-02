@@ -1,5 +1,6 @@
 import React from "react"
 import ClaudeRecipe from "./ClaudeRecipe"
+import Header from "./Header"
 import IngredientsList from "./IngredientsList"
 import { getRecipeFromMistral } from "./ai"
 
@@ -59,6 +60,8 @@ function Main() {
 
   return (
     <main className="main">
+      {/* <h1 className="chefHeader"> <div><Icon icon="hugeicons:chef" width="70" height="70" /></div> <div>ChefClaude</div>  </h1> */}
+      <Header />
       <form 
       className="add-ingredient-form"
       // action={addIngredient} I was suppposed to ouse action but (I think) action is not working for my Version of react.
