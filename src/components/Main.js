@@ -66,10 +66,10 @@ function Main() {
       >
       <input 
       type="text"
-      placeholder="e.g: Oregano"
+      placeholder="e.g: Tomatoes"
       aria-label="Add Ingredient"
       name="ingredient"
-      defaultValue="Bread"
+      // defaultValue="Bread"
       />
       <button>Add ingredients</button>
       </form>
